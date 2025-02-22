@@ -1,0 +1,37 @@
+/**
+ * START --- SETUP TAILWINDCSS EDIT
+ *
+ * `yarn rw setup ui tailwindcss` placed these directives here
+ * to inject Tailwind's styles into your CSS.
+ * For more information, see: https://tailwindcss.com/docs/installation
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-1: 0 100% 63%;
+  --color-2: 270 100% 63%;
+  --color-3: 210 100% 63%;
+  --color-4: 195 100% 63%;
+  --color-5: 90 100% 63%;
+}
+/**
+ * END --- SETUP TAILWINDCSS EDIT
+ */
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-slow {
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+/* Add smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}

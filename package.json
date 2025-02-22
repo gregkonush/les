@@ -8,14 +8,16 @@
   },
   "devDependencies": {
     "@redwoodjs/core": "8.5.0",
-    "@redwoodjs/project-config": "8.5.0"
+    "@redwoodjs/project-config": "8.5.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "prettier-plugin-tailwindcss": "^0.5.12"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
     "root": true
   },
   "engines": {
-    "node": "=20.x"
+    "node": "=22.x"
   },
   "prisma": {
     "seed": "yarn rw exec seed"
